@@ -15,14 +15,14 @@ namespace jw414515MIS4200.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "My MIS4200 description.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Feel free to contact me!";
 
             return View();
         }
