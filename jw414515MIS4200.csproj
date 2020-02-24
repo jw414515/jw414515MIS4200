@@ -168,17 +168,31 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CourseDetailsController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\InstructorsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\StudentsController.cs" />
     <Compile Include="DAL\Context.cs" />
+    <Compile Include="DAL\Context2.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002242201598_InitialCreate.cs" />
+    <Compile Include="Migrations\202002242201598_InitialCreate.Designer.cs">
+      <DependentUpon>202002242201598_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\CourseDetail.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Instructor.cs" />
     <Compile Include="Models\League.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Team.cs" />
     <Compile Include="Models\teamDetail.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -241,6 +255,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Students\Create.cshtml" />
+    <Content Include="Views\Students\Delete.cshtml" />
+    <Content Include="Views\Students\Details.cshtml" />
+    <Content Include="Views\Students\Edit.cshtml" />
+    <Content Include="Views\Students\Index.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
+    <Content Include="Views\Courses\Delete.cshtml" />
+    <Content Include="Views\Courses\Details.cshtml" />
+    <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Instructors\Create.cshtml" />
+    <Content Include="Views\Instructors\Delete.cshtml" />
+    <Content Include="Views\Instructors\Details.cshtml" />
+    <Content Include="Views\Instructors\Edit.cshtml" />
+    <Content Include="Views\Instructors\Index.cshtml" />
+    <Content Include="Views\CourseDetails\Create.cshtml" />
+    <Content Include="Views\CourseDetails\Delete.cshtml" />
+    <Content Include="Views\CourseDetails\Details.cshtml" />
+    <Content Include="Views\CourseDetails\Edit.cshtml" />
+    <Content Include="Views\CourseDetails\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -257,6 +291,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202002242201598_InitialCreate.resx">
+      <DependentUpon>202002242201598_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
